@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Comunidade Cristã A Base</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz - Comunidade Cristã A Base</h2>
+        <form id="quizForm" action="https://formspree.io/f/xyzkwqqo" method="POST">
+            <div class="question">
+                <p>1. Você prefere vir ao culto da manhã ou da noite?</p>
+                <label><input type="radio" name="culto" value="manhã"> Manhã</label>
+                <label><input type="radio" name="culto" value="noite"> Noite</label>
+            </div>
+            <div class="question">
+                <p>2. Você vem ao culto de carro, carona ou transporte por aplicativo? (considere carona a vinda de carro com alguém que vai precisar estacionar na igreja)</p>
+                <label><input type="radio" name="transporte" value="carro"> Carro</label>
+                <label><input type="radio" name="transporte" value="carona"> Carona</label>
+                <label><input type="radio" name="transporte" value="app"> Transporte por aplicativo</label>
+            </div>
+            <div class="question">
+                <p>3. Quantas pessoas costumam vir com você (contando com você)?</p>
+                <input type="number" name="acompanhantes" min="0" max="20">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
